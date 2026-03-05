@@ -5,6 +5,7 @@
 An AI-powered todo list application that helps users break down vague tasks into executable sub-tasks, improving actionability and reducing procrastination.
 
 **Tech Stack:**
+
 - **Frontend**: React 19 + Tailwind CSS 4 (via Next.js 16)
 - **Backend**: Next.js API Routes
 - **Database**: Supabase (PostgreSQL)
@@ -12,7 +13,7 @@ An AI-powered todo list application that helps users break down vague tasks into
 
 ## Architecture
 
-```
+```properties
 ai-todo/
 ├── src/
 │   ├── app/
@@ -50,29 +51,29 @@ ai-todo/
 
 **Table: todos**
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid | Primary key |
-| title | text | Task title |
-| description | text | Detailed description (optional) |
-| is_completed | boolean | Completion status |
-| parent_id | uuid | Parent task ID (for subtasks) |
-| priority | text | 'high', 'medium', 'low' (optional) |
-| due_date | timestamptz | Due date (optional) |
-| tags | text[] | Tags array |
-| remind_at | timestamptz | Reminder time (optional) |
-| created_at | timestamptz | Creation timestamp |
-| updated_at | timestamptz | Last update timestamp |
+| Column       | Type        | Description                        |
+| ------------ | ----------- | ---------------------------------- |
+| id           | uuid        | Primary key                        |
+| title        | text        | Task title                         |
+| description  | text        | Detailed description (optional)    |
+| is_completed | boolean     | Completion status                  |
+| parent_id    | uuid        | Parent task ID (for subtasks)      |
+| priority     | text        | 'high', 'medium', 'low' (optional) |
+| due_date     | timestamptz | Due date (optional)                |
+| tags         | text[]      | Tags array                         |
+| remind_at    | timestamptz | Reminder time (optional)           |
+| created_at   | timestamptz | Creation timestamp                 |
+| updated_at   | timestamptz | Last update timestamp              |
 
 ## API Endpoints
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | /api/todos | Fetch all todos |
-| POST | /api/todos | Create new todo |
-| PATCH | /api/todos/[id] | Update todo |
-| DELETE | /api/todos/[id] | Delete todo (cascades to subtasks) |
-| POST | /api/ai-breakdown | AI task breakdown |
+| Method | Path              | Description                        |
+| ------ | ----------------- | ---------------------------------- |
+| GET    | /api/todos        | Fetch all todos                    |
+| POST   | /api/todos        | Create new todo                    |
+| PATCH  | /api/todos/[id]   | Update todo                        |
+| DELETE | /api/todos/[id]   | Delete todo (cascades to subtasks) |
+| POST   | /api/ai-breakdown | AI task breakdown                  |
 
 ## AI Breakdown Feature
 
@@ -158,6 +159,7 @@ Run: `npm run test:run`
 **Error:** `Port 3000 is in use`
 
 **Solution:**
+
 ```bash
 # Find process
 netstat -ano | grep 3000
@@ -174,6 +176,7 @@ npm run dev -- -p 3001
 **Error:** `Unable to acquire lock at .next/dev/lock`
 
 **Solution:**
+
 ```bash
 taskkill //F //IM node.exe
 rm -rf .next/dev/lock
@@ -185,6 +188,7 @@ npm run dev
 **Error:** `unknown model 'gpt-4o-mini'`
 
 **Solution:** Use MiniMax models only:
+
 - `MiniMax-M2.5`
 - `MiniMax-M2.1`
 - `MiniMax-M2`
