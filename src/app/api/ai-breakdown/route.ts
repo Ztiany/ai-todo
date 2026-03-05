@@ -54,7 +54,7 @@ export async function POST(request: Request) {
 
     // Call OpenAI API to break down the task
     const completion = await openai.chat.completions.create({
-      model: 'MiniMax-M2.5',
+      model: 'Qwen3-Next-80B-A3B-Instruct',
       messages: [
         { role: 'system', content: AI_BREAKDOWN_PROMPT },
         { role: 'user', content: task.trim() },
