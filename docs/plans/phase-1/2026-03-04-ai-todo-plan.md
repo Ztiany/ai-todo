@@ -1,30 +1,36 @@
 # AI Todo - Project Plan
 
 ## Overview
+
 An AI-powered todo list application that helps users break down vague tasks into executable sub-tasks, improving actionability and reducing procrastination.
 
 ## Tech Stack
+
 - Frontend: React + Tailwind CSS (via Next.js)
 - Backend: Next.js API Routes
 - Database: Supabase (PostgreSQL)
 - AI: MiniMax API (proxied via minimaxi)
 
 ## Design Documents
+
 - [2026-03-04-ai-todo-design.md](./2026-03-04-ai-todo-design.md)
 
 ## Implementation Phases
 
 ### Phase 1: Project Setup
+
 - [x] Initialize Next.js project with TypeScript and Tailwind CSS
 - [x] Configure environment variables (.env.local)
 - [x] Set up Supabase client
 - [x] Set up OpenAI client
 
 ### Phase 2: Database Setup
+
 - [x] Create `todos` table in Supabase
 - [x] Verify table structure with list_tables
 
 ### Phase 3: Backend API
+
 - [x] Implement GET /api/todos - Fetch all todos
 - [x] Implement POST /api/todos - Create todo
 - [x] Implement PATCH /api/todos/[id] - Update todo
@@ -33,6 +39,7 @@ An AI-powered todo list application that helps users break down vague tasks into
 - [x] Write unit tests for all API endpoints
 
 ### Phase 4: Frontend UI
+
 - [x] Create TodoInput component (regular + AI input)
 - [x] Create TodoItem component (with expand/collapse)
 - [x] Create TodoList component
@@ -41,11 +48,13 @@ An AI-powered todo list application that helps users break down vague tasks into
 - [x] Write unit tests for components
 
 ### Phase 5: Integration & Polish
+
 - [x] Full E2E testing
 - [x] Bug fixes and refinements
 - [x] Final verification
 
 ## Configuration
+
 Environment variables (store in .env.local):
 
 ```env
