@@ -200,24 +200,24 @@ Output format (JSON):
 
 ### Visual Checkpoints
 
-- [ ] App loads with clean, centered layout
-- [ ] Two input boxes visible at top
-- [ ] AI button has accent color highlight
-- [ ] Tasks display with proper indentation
-- [ ] Completed tasks have strikethrough
-- [ ] Expand/collapse works smoothly
+- [x] App loads with clean, centered layout
+- [x] Two input boxes visible at top
+- [x] AI button has accent color highlight
+- [x] Tasks display with proper indentation
+- [x] Completed tasks have strikethrough
+- [x] Expand/collapse works smoothly
 
 ### Functional Checkpoints
 
-- [ ] Can add regular task
-- [ ] Can mark task complete/incomplete
-- [ ] Can delete task
-- [ ] AI breakdown creates parent + subtasks
-- [ ] Subtasks appear nested under parent
-- [ ] Data persists after page reload (Supabase)
+- [x] Can add regular task
+- [x] Can mark task complete/incomplete
+- [x] Can delete task
+- [x] AI breakdown creates parent + subtasks
+- [x] Subtasks appear nested under parent
+- [x] Data persists after page reload (Supabase)
 
 ### Test Coverage
 
-- [ ] All API endpoints have unit tests
-- [ ] All components have unit tests
-- [ ] Tests pass locally
+- [x] All API endpoints have unit tests
+- [x] All components have unit tests
+- [x] Tests pass locally
